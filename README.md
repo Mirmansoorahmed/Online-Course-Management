@@ -25,22 +25,30 @@ To get started with the Online Course Management System, follow the installation
 
 ## Installation
 
-1. Clone the repository:
+<div>
+  <button id="copyButton" onclick="copyCommands()">Copy Commands</button>
+  <textarea id="commands" rows="5" readonly>
+  # Clone the repository:
+  git clone https://github.com/your-username/online-course-management-system.git
+  cd online-course-management-system
 
-```bash
-git clone https://github.com/your-username/online-course-management-system.git
-cd online-course-management-system
+  # Install dependencies:
+  pip install -r requirements.txt
 
-2. Install dependencies:
+  # Run the application locally:
+  streamlit run app.py
+  </textarea>
+</div>
 
-pip install -r requirements.txt
+<script>
+function copyCommands() {
+  var copyText = document.getElementById("commands");
+  copyText.select();
+  document.execCommand("copy");
+  alert("Commands copied to clipboard!");
+}
+</script>
 
-
-## Usage
-
-To run the application locally, execute the following command:
-
-streamlit run app.py
 
 
 Access the application in your web browser at `http://localhost:8501`.
