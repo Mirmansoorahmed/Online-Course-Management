@@ -25,8 +25,12 @@ To get started with the Online Course Management System, follow the installation
 
 ## Installation
 
+<!-- Include the Clipboard.js library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+
+<!-- HTML code for the commands and copy button -->
 <div>
-  <button id="copyButton" onclick="copyCommands()">Copy Commands</button>
+  <button class="btn" data-clipboard-target="#commands">Copy Commands</button>
   <textarea id="commands" rows="5" readonly>
   # Clone the repository:
   git clone https://github.com/your-username/online-course-management-system.git
@@ -40,15 +44,18 @@ To get started with the Online Course Management System, follow the installation
   </textarea>
 </div>
 
+<!-- JavaScript code to initialize Clipboard.js -->
 <script>
-function copyCommands() {
-  var copyText = document.getElementById("commands");
-  copyText.select();
-  document.execCommand("copy");
-  alert("Commands copied to clipboard!");
-}
-</script>
+  var clipboard = new ClipboardJS('.btn');
 
+  clipboard.on('success', function(e) {
+    alert("Commands copied to clipboard!");
+  });
+
+  clipboard.on('error', function(e) {
+    alert("Failed to copy commands!");
+  });
+</script>
 
 
 Access the application in your web browser at `http://localhost:8501`.
