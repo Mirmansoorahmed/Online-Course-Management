@@ -30,14 +30,14 @@ To get started with the Online Course Management System, follow the installation
 
 <!-- HTML code for the commands and copy button -->
 
-  # Clone the repository:
+## Clone the repository:
   git clone https://github.com/your-username/online-course-management-system.git
   cd online-course-management-system
 
-  # Install dependencies:
+## Install dependencies:
   pip install -r requirements.txt
 
-  # Run the application locally:
+## Run the application locally:
   streamlit run app.py
 
 Access the application in your web browser at `http://localhost:8501`.
@@ -48,10 +48,10 @@ Access the application in your web browser at `http://localhost:8501`.
 2. Containerize the application using Docker:
 docker build -t online-course-management .
 
-3. Push the Docker image to a container registry (e.g., Amazon ECR).
-4. Configure AWS ECS (Elastic Container Service) clusters, services, and task definitions.
-5. Deploy the Docker containers to ECS.
-6. Access the deployed application using the ECS public DNS or load balancer URL.
+4. Push the Docker image to a container registry (e.g., Amazon ECR).
+5. Configure AWS ECS (Elastic Container Service) clusters, services, and task definitions.
+6. Deploy the Docker containers to ECS.
+7. Access the deployed application using the ECS public DNS or load balancer URL.
 
 For detailed instructions on AWS ECS deployment, refer to the [AWS ECS documentation](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html).
 
