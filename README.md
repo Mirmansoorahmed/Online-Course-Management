@@ -27,6 +27,7 @@ To get started with the Online Course Management System, follow the installation
 
 1. Clone the repository:
 
+```bash
 git clone https://github.com/your-username/online-course-management-system.git
 cd online-course-management-system
 
