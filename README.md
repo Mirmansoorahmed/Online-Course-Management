@@ -25,11 +25,6 @@ To get started with the Online Course Management System, follow the installation
 
 ## Installation
 
-<!-- Include the Clipboard.js library -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
-
-<!-- HTML code for the commands and copy button -->
-
 ## Clone the repository:
   git clone https://github.com/your-username/online-course-management-system.git
   cd online-course-management-system
