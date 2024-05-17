@@ -1,0 +1,6 @@
+[
+  "unit_tests.py::test_add_and_view_course",
+  "unit_tests.py::test_add_and_view_student",
+  "unit_tests.py::test_delete_course",
+  "unit_tests.py::test_delete_student"
+]
