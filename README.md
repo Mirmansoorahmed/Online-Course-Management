@@ -53,6 +53,12 @@ For detailed instructions on AWS ECS deployment, refer to the [AWS ECS documenta
 ## Port Configuration
 
 The application runs on port 8501 by default. Ensure that port 8501 is accessible and not blocked by firewalls or other applications.
+## Testing
+pip install pytest
+
+Run in this project directory
+
+python -m pytest  unit_tests.py
 
 ## Contributing
 
