@@ -69,6 +69,12 @@ def delete_course(course_id):
     conn.commit()
     conn.close()
 
+def deleteAll_course():
+    conn = sqlite3.connect('course_management.db')
+    c = conn.cursor()
+    c.execute("DELETE FROM courses")
+    conn.commit()
+    conn.close()
 # Function to add or update a student
 
 
@@ -104,6 +110,13 @@ def delete_student(student_id):
     conn = sqlite3.connect('course_management.db')
     c = conn.cursor()
     c.execute("DELETE FROM students WHERE id = ?", (student_id,))
+    conn.commit()
+    conn.close()
+
+def deleteAll_students():
+    conn = sqlite3.connect('course_management.db')
+    c = conn.cursor()
+    c.execute("DELETE FROM students")
     conn.commit()
     conn.close()
 
